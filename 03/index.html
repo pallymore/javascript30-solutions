@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title> hello </title>
+  </head>
+  <body>
+
+    <p>hello</p>
+
+    <style>
+      :root {
+        --base: #ffc600;
+        --spacing: 10px;
+        --blur: 1px;
+        --meow: 500px
+      }
+
+      p {
+        color: var(--base);
+        font-size: var(--meow);
+        filter: blur(var(--blur));
+      }
+    </style>
+
+    <script>
+      document.documentElement.style.setProperty('--base', "#000000");
+      document.documentElement.style.setProperty('--meow', "300px");
+      document.documentElement.style.setProperty('--blur', "20px");
+    </script>
+  </body>
+</html>

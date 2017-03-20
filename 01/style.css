@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  width: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.keys {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: -80px 0 0 -25%;
+  list-style: none;
+  width: 50%;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.key {
+  width: 80px;
+  display: table-cell;
+  margin: 0 15px;
+  text-align: center;
+  vertical-align: middle;
+  height: 80px;
+  border: 2px solid #111;
+  font-size: 18px;
+  background-color: rgba(0,0,0,0.05);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+
+.key span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 5px 0;
+  color: rgba(0,0,0,0.5);
+}
